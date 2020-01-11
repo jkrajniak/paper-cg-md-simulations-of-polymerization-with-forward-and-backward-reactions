@@ -1,0 +1,131 @@
+<?xml version="1.0" ?>
+<cg_molecule>
+    <name>DEG</name>
+    <ident>DEG</ident>
+    <topology>
+        <cg_beads>
+            <cg_bead>
+                <name>D1</name>
+                <type>D</type>
+                <mapping>D</mapping>
+                <beads>1:DEG:C1 1:DEG:C2 1:DEG:H6 1:DEG:H7 1:DEG:H13 1:DEG:H14 </beads>
+            </cg_bead>
+            <cg_bead>
+                <name>A1</name>
+                <type>A</type>
+                <mapping>A</mapping>
+                <beads>1:DEG:O8 1:DEG:C17 1:DEG:O7 1:DEG:H11</beads>
+            </cg_bead>
+            <cg_bead>
+                <name>B1</name>
+                <type>B</type>
+                <mapping>B</mapping>
+                <beads>
+                    1:DEG:C15 1:DEG:C16 1:DEG:C18 1:DEG:C12 1:DEG:C14 1:DEG:C13 
+                    1:DEG:H10 1:DEG:H9 1:DEG:H12 1:DEG:H8
+                </beads>
+            </cg_bead>
+            <cg_bead>
+                <name>A2</name>
+                <type>C</type>
+                <mapping>A2</mapping>
+                <beads>1:DEG:O6 1:DEG:C11 1:DEG:O5</beads>
+            </cg_bead>
+            <cg_bead>
+                <name>A3</name>
+                <type>C</type>
+                <mapping>A2</mapping>
+                <beads>1:DEG:O4 1:DEG:C9 1:DEG:O3</beads>
+            </cg_bead>
+            <cg_bead>
+                <name>B2</name>
+                <type>B</type>
+                <mapping>B</mapping>
+                <beads>
+                    1:DEG:C7 1:DEG:C8 1:DEG:C10 1:DEG:C6 1:DEG:C5 1:DEG:C4
+                    1:DEG:H4 1:DEG:H5 1:DEG:H3 1:DEG:H2
+                </beads>
+            </cg_bead>
+            <cg_bead>
+                <name>A4</name>
+                <type>A</type>
+                <mapping>A</mapping>
+                <beads>1:DEG:O1 1:DEG:C3 1:DEG:O2 1:DEG:H1</beads>
+            </cg_bead>
+        </cg_beads>
+        <cg_bonded>
+            <bond>
+                <name>bond_b0</name>
+                <beads>
+                    A1 B1
+                    A4 B2
+                </beads>
+            </bond>
+            <bond>
+                <name>bond_b1</name>
+                <beads>
+                    B1 A2
+                    B2 A3
+                </beads>
+            </bond>
+            <bond>
+                <name>bond_b2</name>
+                <beads>
+                    A2 D1
+                    A3 D1
+                </beads>
+            </bond>
+            <angle>
+                <name>angle_a2</name>
+                <beads>
+                    A1 B1 A2
+                    A3 B2 A4
+                </beads>
+            </angle>
+            <angle>
+                <name>angle_a3</name>
+                <beads>
+                    B1 A2 D1
+                </beads>
+            </angle>
+            <angle>
+                <name>angle_a4</name>
+                <beads>
+                    A2 D1 A3
+                </beads>
+            </angle>
+            <dihedral>
+                <name>dihedral_d0</name>
+                <beads>
+                    A1 B1 A2 D1
+                    A4 B2 A3 D1
+                </beads>
+            </dihedral>
+            <dihedral>
+                <name>dihedral_d1</name>
+                <beads>
+                    B1 A2 D1 A3
+                    B2 A3 D1 A2
+                </beads>
+            </dihedral>
+        </cg_bonded>
+    </topology>
+    <maps>
+        <map>
+            <name>D</name>
+            <weights>12.011 12.011 1.008 1.008 1.008 1.008</weights>
+        </map>
+        <map>
+            <name>A</name>
+            <weights>15.99 12.011 15.99 1.008</weights>
+        </map>
+        <map>
+            <name>A2</name>
+            <weights>15.99 12.011 15.99</weights>
+        </map>
+        <map>
+            <name>B</name>
+            <weights>12.011 12.011 12.011 12.011 12.011 12.011 1.008 1.008 1.008 1.008</weights>
+        </map>
+    </maps>
+</cg_molecule>
