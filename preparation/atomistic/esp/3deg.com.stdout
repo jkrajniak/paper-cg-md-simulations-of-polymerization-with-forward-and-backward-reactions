@@ -1,0 +1,44 @@
+time: 86400
+nodes: 1
+procs: 20
+account string: lp_polymer_goa_project
+queue: q24h
+========================================================================
+========================================================================
+Epilogue args:
+Date: Fri Jul 15 10:50:43 CEST 2016
+Allocated nodes:
+r1i1n6
+r1i1n6
+r1i1n6
+r1i1n6
+r1i1n6
+r1i1n6
+r1i1n6
+r1i1n6
+r1i1n6
+r1i1n6
+r1i1n6
+r1i1n6
+r1i1n6
+r1i1n6
+r1i1n6
+r1i1n6
+r1i1n6
+r1i1n6
+r1i1n6
+r1i1n6
+Job ID: 20335513.hpc-p-svcs-10.icts.hpc.kuleuven.be
+User ID: vsc30783
+Group ID: vsc30783
+Job Name: 3deg.com
+Session ID: 56080
+Resource List: neednodes=1:ppn=20,nodes=1:ppn=20,pmem=2500mb,walltime=24:00:00
+Resources Used: cput=12:47:02,energy_used=0,mem=808580kb,vmem=5185584kb,walltime=00:39:10
+Queue Name: q24h
+Account String: lp_polymer_goa_project
+-------------------------------------------------------------------------
+time: 2350
+nodes: 1
+procs: 20
+account: lp_polymer_goa_project

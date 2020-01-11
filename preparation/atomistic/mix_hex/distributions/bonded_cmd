@@ -1,0 +1,16 @@
+tab set T 298
+tab set scale bond
+tab set smooth_pot 1
+tab set smooth_pdf 1
+tab bond_A_B.tab *:bond_b0:*
+tab bond_B_C.tab *:bond_b1:*
+tab bond_C_D.tab *:bond_b3:*
+tab set scale angle
+tab angle_A_B_C.tab *:angle_a0:*
+tab angle_B_C_D.tab *:angle_a1:*
+tab angle_C_D_C.tab *:angle_a2:*
+tab set scale no
+tab set periodic 1
+tab dihedral_A_B_C_D.tab *:dihedral_d0:*
+tab dihedral_B_C_D_C.tab *:dihedral_d1:*
+q

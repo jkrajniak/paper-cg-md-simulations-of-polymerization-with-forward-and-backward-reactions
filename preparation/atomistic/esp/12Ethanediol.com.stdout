@@ -1,0 +1,44 @@
+time: 86400
+nodes: 1
+procs: 20
+account string: lp_polymer_goa_project
+queue: q24h
+========================================================================
+========================================================================
+Epilogue args:
+Date: Thu Jul  7 11:33:19 CEST 2016
+Allocated nodes:
+r1i1n12
+r1i1n12
+r1i1n12
+r1i1n12
+r1i1n12
+r1i1n12
+r1i1n12
+r1i1n12
+r1i1n12
+r1i1n12
+r1i1n12
+r1i1n12
+r1i1n12
+r1i1n12
+r1i1n12
+r1i1n12
+r1i1n12
+r1i1n12
+r1i1n12
+r1i1n12
+Job ID: 20329786.hpc-p-svcs-10.icts.hpc.kuleuven.be
+User ID: vsc30787
+Group ID: vsc30787
+Job Name: 12Ethanediol.com
+Session ID: 34205
+Resource List: neednodes=1:ppn=20,nodes=1:ppn=20,pmem=2500mb,walltime=24:00:00
+Resources Used: cput=00:00:00,energy_used=0,mem=0kb,vmem=0kb,walltime=00:00:20
+Queue Name: q24h
+Account String: lp_polymer_goa_project
+-------------------------------------------------------------------------
+time: 20
+nodes: 1
+procs: 20
+account: lp_polymer_goa_project

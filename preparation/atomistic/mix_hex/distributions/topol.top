@@ -1,0 +1,12 @@
+#include "/apps/leuven/thinking/2014a/software/GROMACS/4.6.5-intel-2014a-hybrid/share/gromacs/top//oplsaa.ff/forcefield.itp"
+
+#include "./3deg.itp"
+
+
+[ system ]
+; Name
+12Ethanediol
+
+[ molecules ]
+; Compound        #mols
+DEG             250
