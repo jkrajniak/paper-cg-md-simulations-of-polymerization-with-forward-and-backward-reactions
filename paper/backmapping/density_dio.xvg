@@ -1,0 +1,74 @@
+# This file was created Wed May  3 09:13:19 2017
+# Created by:
+#                     :-) GROMACS - gmx density, 2016.3 (-:
+# 
+# Executable:   /user/leuven/307/vsc30783/vsc_data/software/2015a/GROMACS/2016.3/bin/gmx_mpi
+# Data prefix:  /user/leuven/307/vsc30783/vsc_data/software/2015a/GROMACS/2016.3
+# Working dir:  /ddn1/vol1/staging/leuven/stg_00009/jakub/dacron/chemical_reactions/new_ff/with_water/p0_gamma_50/backmapping/gmx_aa2/eq/nvt
+# Command line:
+#   gmx_mpi density -f traj_comp.xtc
+# gmx density is part of G R O M A C S:
+#
+# Good ROcking Metal Altar for Chronical Sinners
+#
+@    title "Partial density"
+@    xaxis  label "Coordinate (nm)"
+@    yaxis  label "Density (kg m\S-3\N)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "DIO"
+   0.0650821            207.3
+    0.195246          212.093
+    0.325411          194.118
+    0.455575          169.817
+    0.585739          177.321
+    0.715903          192.921
+    0.846067          173.535
+    0.976232          154.338
+      1.1064          175.063
+     1.23656          168.694
+     1.36672          194.187
+     1.49689           194.51
+     1.62705          195.218
+     1.75722          197.602
+     1.88738          199.699
+     2.01755          221.947
+     2.14771          215.327
+     2.27787          211.559
+     2.40804          227.017
+      2.5382          195.741
+     2.66837          201.076
+     2.79853          168.168
+     2.92869          190.819
+     3.05886          191.232
+     3.18902          170.844
+     3.31919           183.03
+     3.44935          193.398
+     3.57952          159.209
+     3.70968           130.65
+     3.83984          137.505
+     3.97001          152.153
+     4.10017          179.641
+     4.23034          185.079
+      4.3605          182.205
+     4.49066          185.673
+     4.62083           171.82
+     4.75099          154.928
+     4.88116          164.362
+     5.01132          172.034
+     5.14149          168.054
+     5.27165          174.187
+     5.40181          165.422
+     5.53198          162.317
+     5.66214          150.265
+     5.79231          167.014
+     5.92247          180.376
+     6.05264           193.19
+      6.1828          183.539
+     6.31296           175.83
+     6.44313          189.764

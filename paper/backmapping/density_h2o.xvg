@@ -1,0 +1,74 @@
+# This file was created Wed May  3 09:10:31 2017
+# Created by:
+#                     :-) GROMACS - gmx density, 2016.3 (-:
+# 
+# Executable:   /user/leuven/307/vsc30783/vsc_data/software/2015a/GROMACS/2016.3/bin/gmx_mpi
+# Data prefix:  /user/leuven/307/vsc30783/vsc_data/software/2015a/GROMACS/2016.3
+# Working dir:  /ddn1/vol1/staging/leuven/stg_00009/jakub/dacron/chemical_reactions/new_ff/with_water/p0_gamma_50/backmapping/gmx_aa2/eq/nvt
+# Command line:
+#   gmx_mpi density -f traj_comp.xtc
+# gmx density is part of G R O M A C S:
+#
+# GROningen MAchine for Chemical Simulation
+#
+@    title "Partial density"
+@    xaxis  label "Coordinate (nm)"
+@    yaxis  label "Density (kg m\S-3\N)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "H2O"
+   0.0650821          164.654
+    0.195246          166.656
+    0.325411          167.541
+    0.455575          181.327
+    0.585739          161.767
+    0.715903          172.826
+    0.846067          191.587
+    0.976232          190.802
+      1.1064          203.923
+     1.23656          225.337
+     1.36672          240.743
+     1.49689          270.469
+     1.62705          258.824
+     1.75722          227.223
+     1.88738          214.926
+     2.01755          186.328
+     2.14771          166.416
+     2.27787          162.206
+     2.40804          166.808
+      2.5382          178.081
+     2.66837          155.823
+     2.79853           123.19
+     2.92869            126.5
+     3.05886          129.147
+     3.18902          150.503
+     3.31919          149.476
+     3.44935          183.062
+     3.57952          192.732
+     3.70968          195.867
+     3.83984          187.248
+     3.97001          163.164
+     4.10017          147.245
+     4.23034          144.484
+      4.3605          154.538
+     4.49066          168.132
+     4.62083          179.873
+     4.75099          162.345
+     4.88116          150.615
+     5.01132          158.868
+     5.14149          185.187
+     5.27165          188.269
+     5.40181          191.724
+     5.53198          188.976
+     5.66214          189.991
+     5.79231          193.953
+     5.92247          195.084
+     6.05264          184.812
+      6.1828          174.262
+     6.31296          146.005
+     6.44313          152.003
