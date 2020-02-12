@@ -1,0 +1,33 @@
+#!/bin/bash -l
+#PBS -l walltime=24:00:00
+#PBS -o Output.job
+#PBS -j oe
+#PBS -l nodes=2:ppn=20
+#PBS -M jakub.krajniak@cs.kuleuven.be
+#PBS -A lp_sim_interpoco
+#PBS -N dacron_water
+
+source switch_to_2015a
+module purge
+
+cd $PBS_O_WORKDIR
+
+module load 2015a/h5py
+module load 2015a/espressopp/chem_devel
+module load chemlab/dev
+
+#Set up OpenMPI environment
+
+n_proc=$(cat $PBS_NODEFILE | wc -l)
+n_node=$(cat $PBS_NODEFILE | uniq | wc -l)
+#mpdboot -f $PBS_NODEFILE -n $n_node -r ssh -v
+
+r1=0.01
+
+for i in {1..3}; do
+    for rr in 0.1 0.01 0.001; do
+        sed -e "s/RATEf$/$rr/g; s/RATEr$/${r1}/g;" reaction.tpl > reaction_${rr}_${r1}.cfg
+        rng="`shuf -i 12345-99999 -n1`"
+        mpirun -n 32 start_simulation.py @params --rng_seed ${rng} --output_prefix "data/pp_${rr}_${r1}" --reactions reaction_${rr}_${r1}.cfg --start_ar 500000 &> pp_${rng}_${rr}_${r1}.log
+    done
+done

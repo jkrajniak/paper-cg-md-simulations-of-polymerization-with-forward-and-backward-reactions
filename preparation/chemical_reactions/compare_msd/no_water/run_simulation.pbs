@@ -1,0 +1,24 @@
+#!/bin/bash -l
+#PBS -l mem=32gb
+#PBS -l walltime=1:00:00
+#PBS -o Output.job
+#PBS -j oe
+#PBS -l nodes=2:ppn=20
+#PBS -M jakub.krajniak@cs.kuleuven.be
+#PBS -A lp_sim_interpoco
+#PBS -N dacron_water
+
+module purge
+
+cd $PBS_O_WORKDIR
+
+module load 2015a/espressopp/chem
+module load chemlab/1.0
+
+# Set up OpenMPI environment
+n_proc=$(cat $PBS_NODEFILE | wc -l)
+n_node=$(cat $PBS_NODEFILE | uniq | wc -l)
+mpdboot -f $PBS_NODEFILE -n $n_node -r ssh -v
+
+rng="`shuf -i 12345-99999 -n1`"
+mpirun -n 32 start_simulation.py @params --rng_seed ${rng} &> run_${rng}.log
