@@ -1,0 +1,74 @@
+# This file was created Wed May  3 09:14:09 2017
+# Created by:
+#                     :-) GROMACS - gmx density, 2016.3 (-:
+# 
+# Executable:   /user/leuven/307/vsc30783/vsc_data/software/2015a/GROMACS/2016.3/bin/gmx_mpi
+# Data prefix:  /user/leuven/307/vsc30783/vsc_data/software/2015a/GROMACS/2016.3
+# Working dir:  /ddn1/vol1/staging/leuven/stg_00009/jakub/dacron/chemical_reactions/new_ff/with_water/p0_gamma_50/backmapping/gmx_aa2/eq/nvt
+# Command line:
+#   gmx_mpi density -f traj_comp.xtc
+# gmx density is part of G R O M A C S:
+#
+# GRoups of Organic Molecules in ACtion for Science
+#
+@    title "Partial density"
+@    xaxis  label "Coordinate (nm)"
+@    yaxis  label "Density (kg m\S-3\N)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "TER"
+   0.0650821          919.029
+    0.195246            884.2
+    0.325411          923.088
+    0.455575          910.315
+    0.585739          937.211
+    0.715903          974.461
+    0.846067          887.774
+    0.976232          914.803
+      1.1064          886.742
+     1.23656          930.959
+     1.36672          796.352
+     1.49689          765.056
+     1.62705          848.074
+     1.75722          834.695
+     1.88738          832.667
+     2.01755          900.688
+     2.14771           863.54
+     2.27787          915.439
+     2.40804          906.663
+      2.5382          898.251
+     2.66837          949.771
+     2.79853           966.48
+     2.92869          993.134
+     3.05886          1020.33
+     3.18902          991.885
+     3.31919          921.209
+     3.44935           963.47
+     3.57952          935.529
+     3.70968           913.05
+     3.83984          963.996
+     3.97001           973.63
+     4.10017          1005.53
+     4.23034          949.816
+      4.3605          962.544
+     4.49066          872.704
+     4.62083          963.351
+     4.75099          995.925
+     4.88116          964.742
+     5.01132          976.204
+     5.14149          957.194
+     5.27165          898.598
+     5.40181          885.959
+     5.53198          989.193
+     5.66214           974.67
+     5.79231          867.811
+     5.92247           901.04
+     6.05264          926.914
+      6.1828          925.894
+     6.31296           938.72
+     6.44313          994.909
